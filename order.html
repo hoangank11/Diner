@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order — Sáng Ơi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="order">
+
+  <main id="orderMain">
+    <h1>Order</h1>
+    <p class="lead">Change the quantities, then pay when you are ready.</p>
+
+    <div class="order-layout">
+      <!-- Ordered dishes are filled in by script.js -->
+      <section id="cartItems"></section>
+
+      <aside class="summary">
+        <h2>Summary</h2>
+
+        <form class="promo" id="promoForm">
+          <input id="promoInput" placeholder="Promo code" aria-label="Promo code">
+          <button class="btn btn-outline" type="submit">Apply</button>
+        </form>
+        <p class="promo-msg" id="promoMsg"></p>
+
+        <ul id="summaryLines"></ul>
+
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="total">0 ₫</strong>
+        </div>
+
+        <button class="btn" id="checkoutBtn">Checkout</button>
+
+        <div class="pay-methods" id="payMethods">
+          <button type="button" class="on">Visa</button>
+          <button type="button">PayPal</button>
+          <button type="button">Mastercard</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
